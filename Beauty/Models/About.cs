@@ -26,6 +26,10 @@ public partial class About
 
     public string? ValueRight { get; set; }
 
+    public string? UrlLeft { get; set; }
+
+    public string? UrlRight { get; set; }
+
     [ForeignKey("FileId1")]
     [InverseProperty("AboutFileId1Navigations")]
     public virtual FileImg? FileId1Navigation { get; set; }

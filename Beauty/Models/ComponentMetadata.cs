@@ -183,6 +183,8 @@ namespace Beauty.Models
                 a.FileId1 = this.About.FileId1;
                 a.FileIdLeft = this.About.FileIdLeft;
                 a.FileIdRight = this.About.FileIdRight;
+                a.UrlLeft = this.About.UrlLeft;
+                a.UrlRight = this.About.UrlRight;
                 Component ac = (Component)a;
                 a.Name = this.Name;
                 customContext.Add(ac);
