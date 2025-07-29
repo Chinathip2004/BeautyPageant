@@ -12,7 +12,8 @@ namespace Beauty.Models
         public EventCategorize Create(CustomContext context)
         {
 
-            this.CategoryId = CategoryId;
+            EventCategorize ec = new EventCategorize();
+            ec.CategoryId = this.CategoryId;
             context.Add(this);
 
             return this;

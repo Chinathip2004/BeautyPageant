@@ -23,6 +23,10 @@ public partial class Banner
     [Column("isUrl")]
     public bool IsUrl { get; set; }
 
+    [ForeignKey("FileId")]
+    [InverseProperty("Banners")]
+    public virtual FileImg? File { get; set; }
+
     [ForeignKey("Id")]
     [InverseProperty("Banner")]
     public virtual Component IdNavigation { get; set; } = null!;

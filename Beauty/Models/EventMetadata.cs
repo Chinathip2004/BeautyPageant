@@ -12,7 +12,7 @@ namespace Beauty.Models
         {
             foreach(EventCategorize ec in this.EventCategorizes)
             {
-
+                ec.Create(customcontext);
             }
 
             foreach(Dependent dependent in this.Dependents)
@@ -22,5 +22,8 @@ namespace Beauty.Models
             customcontext.Add(this);
             return this;
         }
+
+
+        
     }
 }

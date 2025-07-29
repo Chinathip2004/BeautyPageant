@@ -120,6 +120,8 @@ public partial class BeautyDbContext : DbContext
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
 
+            entity.HasOne(d => d.File).WithMany(p => p.Banners).HasConstraintName("FK_Banner_FileImg");
+
             entity.HasOne(d => d.IdNavigation).WithOne(p => p.Banner)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Banner_Component");

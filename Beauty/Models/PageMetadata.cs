@@ -28,11 +28,7 @@ namespace Beauty.Models
 
             }
 
-            //foreach(Containing item in this.Containings)
-            //{
-            //    item.ContainerId = Pc.Id;
-            //    item.Create(Pc, customcontext);
-            //}
+            
 
             return this;
         }

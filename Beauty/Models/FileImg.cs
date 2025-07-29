@@ -26,6 +26,9 @@ public partial class FileImg
     public virtual ICollection<About> AboutFileIdRightNavigations { get; set; } = new List<About>();
 
     [InverseProperty("File")]
+    public virtual ICollection<Banner> Banners { get; set; } = new List<Banner>();
+
+    [InverseProperty("File")]
     public virtual ICollection<ElementImageUploadWithImageContent> ElementImageUploadWithImageContents { get; set; } = new List<ElementImageUploadWithImageContent>();
 
     [InverseProperty("File")]
